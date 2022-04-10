@@ -28,6 +28,10 @@
     width: min(40%, var(--pic-width));
     z-index: 0;   
     min-width: 300px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .logo-place {
@@ -51,9 +55,9 @@
     padding: 15px;
     text-align: center;
     box-sizing: border-box;
-    position: absolute;
-    bottom: 0;
-    width: min(40%, var(--pic-width));
+    /*position: absolute;
+    bottom: 0;*/
+    width: min(100%, var(--pic-width));
     min-width: 300px;
     height: 10vh;            /* Footer height */
     background-color: #1f1a2498;
@@ -80,7 +84,8 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    width: max(60%, calc(100vw - var(--pic-width)));
+    width: max(60%, calc(100% - var(--pic-width)));
+    min-width: 750px;
     padding: 5px;
     padding-left: 50px; 
     background-image:linear-gradient(270deg, #e4654838 5%, rgba(255, 0, 0, 0)), linear-gradient(to right, rgba(0, 0, 0, 0) 0%, #1F1A24 15px);
@@ -95,7 +100,7 @@ a:hover {
 .about-form {
     color: rgba(240, 255, 255, 0.515);
     font-weight: 400;
-    width: 440px;
+    max-width: 420px;
     text-align: justify;
     padding-bottom: 30px;
 }
