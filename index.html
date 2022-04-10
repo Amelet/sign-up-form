@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+    <div class="left-side">
+        <div class="logo-place"><div class="logo"></div></div>
+        <div class="photo-credits">
+            <p>Photo by <a href="https://unsplash.com/@reddalec?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Redd</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p> 
+        </div>
+    </div>
+
+    <div class="right-side">
+        <h1>Sign-Up Form</h1>
+        <div class="about-form">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        <div>
+            <form action="" method="post"  class="form">
+
+                <div class="input-bg">
+                
+                <div>                    
+                    <label for="fname">FIRST NAME*</label>
+                    <input type="text" id="fname" required>
+                </div>
+                <div>
+                    <label for="lname">LAST NAME</label>
+                    <input type="text" id="lname">
+                </div>
+                <div>
+                    <label for="email">EMAIL*</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" name="phone" id="phone"  pattern="[+]{1}[0-9]{11,14}" placeholder="+4671156465">
+                </div>
+                <div>
+                    <label for="password">PASSWORD*</label>
+                    <input type="password" name="password" id="password" class="error" required>
+                </div>
+                <div>
+                    <label for="password">CONFIRM PASSWORD*</label>
+                    <input type="password" name="confirm_password" id="confirm_password" class="error" required>
+                </div>
+
+                </div>
+
+                <div class="btndiv">
+                    <button type="submit" class="btn">Create Account</button>
+                </div>
+            </form>
+        </div>
+        <div class="link-to-login"></div>
+    </div>
+    
+</body>
+</html>
